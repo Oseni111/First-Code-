@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTWORKS LIMITED</title>
+</head>
+<body>
+<style>
+   body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        color: #555;
+        line-height: 1.5;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+    button[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    </style>
+   <!--We are creating  survery form, here we will have Name, email address, Position in the office, How sartified is our service, your current role in the office -->
+    <div class="container">
+        <h1 id="title">Nextworks Limited </h1>
+        <p>Nextworks is a technology centered and people-driven company. We offer intelligent building technologies and home automation solutions for both private and individuals and co-operate organisations.</p>
+        <p>Please fill <strong>OUR</strong> survey below.</p>
+    <form id="survey-form">
+    <!--This is the place you input your name...-->
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Please enter your name" required> <!---->
+     <!--This is the place we put our email -->
+         <p><label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+         </p>
+    <!-- Dropdown Field -->
+        <label for="dropdown">What is your current Position?</label>
+        <select id="dropdown" required>
+            <option value="">Select a role</option>
+            <option value="student">Intern</option>
+            <option value="professional">Juniour Staff</option>
+            <option value="senior">Senior Staff</option>
+            <option value="manager">Manager</option>
+            <option value="director">Director</option>
+            <option value="ceo">CEO</option>
+            <option value="">Others</option>
+        </select>
+        <!--Here the employers drop their comments or opinion or even ideas. Just anything just want to say-->
+        <p>Additional Comments:</p>
+        <textarea id="comments" rows="4" placeholder="Enter your comments here"></textarea>
+
+
+         <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</html>
